@@ -22,6 +22,7 @@
 		54644160234F842C005C05BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54644163234F842C005C05BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54644165234F842C005C05BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5464416C234F86A5005C05BE /* Tip Calculator.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Tip Calculator.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +39,7 @@
 		5464414D234F842A005C05BE = {
 			isa = PBXGroup;
 			children = (
+				5464416C234F86A5005C05BE /* Tip Calculator.playground */,
 				54644158234F842A005C05BE /* Calculator */,
 				54644157234F842A005C05BE /* Products */,
 			);

@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //MARK: Properties (Outlets)(constants)
+    //MARK: Methods (actions)
 
     override func viewDidLoad() {
         super.viewDidLoad()
