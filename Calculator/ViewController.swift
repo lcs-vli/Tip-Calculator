@@ -17,21 +17,25 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sliptBetweenPeople: UITextField!
     
-    @IBOutlet weak var totalTipString: UITextField!
+    @IBOutlet weak var tipPerPersonString: UILabel!
     
-    @IBOutlet weak var tipPerPersonString: UITextField!
-    
+    @IBOutlet weak var totalTipString: UILabel!
     //MARK: Methods (actions)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+    
+    }
+
+    @IBAction func calculate(_ sender: Any) {
         let AmountText = AmountOfBill.text!
         let bill = Double(AmountText)!
         
         let tipText = tipPercentage.text!
-        let tipPercent = Double(tipText)!
+        let tipPercent1 = Double(tipText)!
+        let tipPercent = tipPercent1/100
         
         let totalPeopleText = sliptBetweenPeople.text!
         let totalPeople = Double(totalPeopleText)!
@@ -39,14 +43,10 @@ class ViewController: UIViewController {
         let totalTip = bill * tipPercent
         let tipPerPerson = totalTip/totalPeople
         
-        func calculate(_ sender: Any) {
-            totalTipString.text = "$ \(totalTip)"
-            tipPerPersonString.text = "$ \(tipPerPerson)"
-        }
-        
+        totalTipString.text = "$\(totalTip)"
+        tipPerPersonString.text = "$\(tipPerPerson)"
     }
-
-   
+    
     
    
 }
