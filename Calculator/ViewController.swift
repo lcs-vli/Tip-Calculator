@@ -30,18 +30,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculate(_ sender: Any) {
+        //amount of the bill
         let AmountText = AmountOfBill.text!
         let bill = Double(AmountText)!
         
+        //amount of the tip
         let tipText = tipPercentage.text!
         let tipPercent1 = Double(tipText)!
         let tipPercent = tipPercent1/100
         
+        //number of people
         let totalPeopleText = sliptBetweenPeople.text!
         let totalPeople = Double(totalPeopleText)!
         
+        //value of the tip in dollars and cents
         let totalTip = bill * tipPercent
-        let tipPerPerson = totalTip/totalPeople
+        let totalTipInCent:Double = totalTip * 100
+        
+        //value of the tip per person
+        let tipPerPerson = round(totalTipInCent/totalPeople)/100
         
         totalTipString.text = "$\(totalTip)"
         tipPerPersonString.text = "$\(tipPerPerson)"
